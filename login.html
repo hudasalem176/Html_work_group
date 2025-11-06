@@ -59,6 +59,7 @@
             box-sizing: border-box; /* لضمان أن العرض يشمل البادينغ والحدود */
             transition: border-color 0.3s;
         }
+        
 
         .input-group input:focus {
             border-color: #007bff; /* تغيير لون الحد عند التركيز */
@@ -81,6 +82,28 @@
         .login-button:hover {
             background-color: #0056b3; /* لون أغمق عند المرور */
         }
+         /* تعديل خلود: تحسين شكل الروابط ووضعها تحت بعض */
+       .extra-links {
+       margin-top: 18px;
+       display: flex;
+       flex-direction: column; /* يجعل الروابط تحت بعض */
+       align-items: center; /* توسيطها */
+       gap: 8px; /* مسافة بين الروابط */
+        }
+
+      .extra-links a {
+       color: #0056b3; /* لون أزرق أنعم */
+       text-decoration: none;
+       font-weight: 600; /* خط أثخن قليلاً */
+       font-size: 15px; /* تكبير الخط */
+       transition: 0.3s;
+       }
+
+      .extra-links a:hover {
+       color: #003d80; /* لون أغمق عند المرور */
+       text-decoration: underline;
+       }
+
     </style>
 </head>
 <body>
@@ -100,6 +123,11 @@
             </div>
             
             <button type="submit" class="login-button">دخول</button>
+          
+           <div class="extra-links">
+           <a href="#">نسيت كلمة المرور؟</a>
+           <a href="#">إنشاء حساب جديد</a>
+            </div>
             
         </form>
     </div>
