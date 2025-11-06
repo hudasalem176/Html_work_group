@@ -4,107 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>صفحة تسجيل الدخول</title>
-    <style>
-        /* التنسيقات العامة */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f7f6; /* لون خلفية خفيف */
-            display: flex;
-            justify-content: center; /* توسيط أفقي */
-            align-items: center; /* توسيط عمودي */
-            min-height: 100vh; /* التأكد من أن الخلفية تغطي كامل ارتفاع الشاشة */
-            margin: 0;
-            direction: rtl; /* دعم اللغة العربية */
-        }
-
-        /* حاوية تسجيل الدخول */
-        .login-container {
-            background-color: #ffffff;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* ظل خفيف */
-            width: 100%;
-            max-width: 400px; /* تحديد أقصى عرض للحاوية */
-            text-align: center;
-        }
-
-        /* عنوان الصفحة */
-        .login-container h2 {
-            margin-bottom: 30px;
-            color: #333;
-            font-size: 28px;
-        }
-
-        /* مجموعات الإدخال */
-        .input-group {
-            margin-bottom: 20px;
-            text-align: right;
-        }
-
-        /* تسمية الحقول */
-        .input-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-            color: #555;
-        }
-
-        /* حقول الإدخال */
-        .input-group input[type="text"],
-        .input-group input[type="password"] {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            box-sizing: border-box; /* لضمان أن العرض يشمل البادينغ والحدود */
-            transition: border-color 0.3s;
-        }
-        
-
-        .input-group input:focus {
-            border-color: #007bff; /* تغيير لون الحد عند التركيز */
-            outline: none;
-        }
-
-        /* زر تسجيل الدخول */
-        .login-button {
-            width: 100%;
-            padding: 12px;
-            background-color: #007bff; /* لون أزرق جذاب */
-            color: white;
-            border: none;
-            border-radius: 6px;
-            font-size: 18px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .login-button:hover {
-            background-color: #0056b3; /* لون أغمق عند المرور */
-        }
-         /* تعديل خلود: تحسين شكل الروابط ووضعها تحت بعض */
-       .extra-links {
-       margin-top: 18px;
-       display: flex;
-       flex-direction: column; /* يجعل الروابط تحت بعض */
-       align-items: center; /* توسيطها */
-       gap: 8px; /* مسافة بين الروابط */
-        }
-
-      .extra-links a {
-       color: #0056b3; /* لون أزرق أنعم */
-       text-decoration: none;
-       font-weight: 600; /* خط أثخن قليلاً */
-       font-size: 15px; /* تكبير الخط */
-       transition: 0.3s;
-       }
-
-      .extra-links a:hover {
-       color: #003d80; /* لون أغمق عند المرور */
-       text-decoration: underline;
-       }
-
-    </style>
+    <link rel="stylesheet" href="css_file.css"> <!-- ربط ملف CSS الخارجي -->
 </head>
 <body>
     
@@ -125,9 +25,9 @@
             <button type="submit" class="login-button">دخول</button>
           
            <div class="extra-links">
-           <a href="#">نسيت كلمة المرور؟</a>
-           <a href="#">إنشاء حساب جديد</a>
-            </div>
+               <a href="#">نسيت كلمة المرور؟</a>
+               <a href="#">إنشاء حساب جديد</a>
+           </div>
             
         </form>
     </div>
